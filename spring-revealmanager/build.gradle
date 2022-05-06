@@ -18,6 +18,6 @@ android {
 }
 
 dependencies {
-  compile project(':circualreveal')
-  compile "com.android.support:support-core-utils:$support_lib_version"
+  implementation project(':circualreveal')
+  api "com.android.support:support-core-utils:$support_lib_version"
 }
