@@ -237,7 +237,14 @@ public class ViewRevealManager {
       path.addCircle(child.getX() + values.centerX, child.getY() + values.centerY, values.radius,
           Path.Direction.CW);
 
-      canvas.clipPath(path, op);
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+        //FIXME this avoid crash on device >= 28, but seems break reveal circle animation
+        canvas.save();
+        canvas.clipPath(path);
+        canvas.restore();
+      } else {
+        canvas.clipPath(path, op);
+      }
 
       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
         child.invalidateOutline();

@@ -19,5 +19,5 @@ android {
 
 dependencies {
   implementation project(':circualreveal')
-  api "com.android.support:support-core-utils:$support_lib_version"
+  implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
 }

@@ -16,7 +16,7 @@
 
 package io.codetail.animation;
 
-import android.support.annotation.FloatRange;
+import androidx.annotation.FloatRange;
 
 /**
  * Spring Force defines the characteristics of the spring being used in the animation.
