@@ -17,7 +17,7 @@
 package io.codetail.animation;
 
 import android.os.SystemClock;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.collection.SimpleArrayMap;
 import android.view.Choreographer;
 
 import java.util.ArrayList;

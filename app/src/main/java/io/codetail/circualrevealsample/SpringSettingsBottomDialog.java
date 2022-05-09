@@ -1,15 +1,15 @@
 package io.codetail.circualrevealsample;
 
 import android.content.Context;
-import android.support.animation.SpringForce;
-import android.support.v7.widget.AppCompatTextView;
-import android.support.v7.widget.SwitchCompat;
+import androidx.dynamicanimation.animation.SpringForce;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import io.codetail.animation.RevealViewGroup;
+
 import io.codetail.animation.SpringViewAnimatorManager;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
